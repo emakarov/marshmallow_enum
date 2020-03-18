@@ -33,7 +33,7 @@ class EnumField(Field):
     }
 
     def __init__(
-            self, enum, by_value=False, load_by=None, dump_by=None, error='', *args, **kwargs
+            self, enum, by_value=True, load_by=None, dump_by=None, error='', *args, **kwargs
     ):
         self.enum = enum
         self.by_value = by_value
